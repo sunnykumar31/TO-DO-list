@@ -1,0 +1,93 @@
+/* ------------Initial Phase CSS--------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: rgb(6, 104, 125);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+  }
+  header,
+  form {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #add_items{
+    height: 50px;
+    width: 100vw;
+    text-align: center;
+    color: white;
+    font-size: 30px;  
+  }
+  form input,
+  form button {
+    padding: 10px;
+    border: none;
+    font-size: 24px;
+    background: white;
+    outline: none;
+  }
+  form button {
+    color: purple;
+    background-color: white;
+    cursor: pointer;
+  }
+  form button:hover {
+    color: white;
+    background-color: skyblue;
+  }
+  
+  
+  .todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .todo-list {
+    list-style: none;
+    min-width: 45%;
+  }
+  
+  .todo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-color: white;
+    color: black;
+    margin: 10px;
+  }
+  .cmpltBtn {
+    background-color: rgb(49, 236, 180);
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+  }
+  .deleteBtn {
+    background-color: rgb(212, 15, 15);
+    border: none;
+    padding: 16px;
+    font-size: 16px;
+  }
+  
+  .todo li {
+    flex: 1;
+    padding: 0px 10px;
+  }
+  
+  .fa-trash,
+  .fa-check {
+    pointer-events: none;
+  }
+  
+  .todo-done {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
